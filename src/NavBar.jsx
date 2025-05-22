@@ -1,12 +1,17 @@
 const NavBar = () => {
-    return (
-        <div className="navbar bg-blue-200 shadow-sm flex justify-between ">
+  return (
+    <div className="navbar bg-blue-200 shadow-sm flex justify-between">
       <div className="flex justify-center items-center">
-        <img src=" ../public/images/logo_cricket.png " alt="logo" className="w-20 h-20 rounded-full"/>
-        <a className="btn btn-ghost text-2xl font-bold">Find Your Cricket Bros</a>
+        <img
+          src=" ../public/images/logo_cricket.png "
+          alt="logo"
+          className="w-20 h-20 rounded-full"
+        />
+        <a className="btn btn-ghost text-2xl font-bold">
+          Find Your Cricket Bros
+        </a>
       </div>
       <div className="flex gap-2 mx-10">
-       
         <div className="dropdown dropdown-end">
           <div
             tabIndex={0}
@@ -40,6 +45,6 @@ const NavBar = () => {
         </div>
       </div>
     </div>
-    )
-}
+  );
+};
 export default NavBar;

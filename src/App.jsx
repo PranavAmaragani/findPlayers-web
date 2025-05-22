@@ -5,16 +5,16 @@ import Login from "./Login";
 //routing
 function App() {
   return (
-    <BrowserRouter basename="/">
-      <Routes>
-        <Route path="/" element={<Body/>}>
-            <Route path="/login" element={<Login/>} />
-            <Route path="/connections" element={<Connections/> }/>
-        </Route>
-        
-      </Routes>
-    </BrowserRouter>
-    
+    <div className="h-[100vh] w-screen">
+      <BrowserRouter basename="/">
+        <Routes>
+          <Route path="/" element={<Body />}>
+            <Route path="/login" element={<Login />} />
+            <Route path="/connections" element={<Connections />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
